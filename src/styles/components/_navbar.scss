@@ -1,0 +1,23 @@
+#navbar {
+	width: 100%;
+	min-height: 1rem;
+	color: white;
+	fill: white;
+	background-color: $nord1;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	padding: 0.8rem;
+	border-bottom: 1px solid $nord4;
+
+	#nav-hamburger {
+		font-size: 2rem;
+		top: 0;
+	}
+
+	#nav-upload {
+		width: 25px;
+		height: 100%;
+	}
+}

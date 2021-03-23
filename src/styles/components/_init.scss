@@ -1,0 +1,32 @@
+// Variables
+$nord0: #2e3440;
+$nord1: #3b4252;
+$nord2: #434c5e;
+$nord4: #4c566a;
+$nord5: #d8dee9;
+$nord6: #e5e9f0;
+$nord7: #eceff4;
+$nord8: #8fbcbb;
+$nord9: #88c0d0;
+$nord10: #81a1c1;
+$nord11: #5e81ac;
+$nord12: #bf616a;
+$nord13: #d08770;
+$nord14: #ebcb8b;
+$nord15: #a3be8c;
+$nord16: #b48ead;
+
+// Basic styling
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: $nord0;
+}
