@@ -1,19 +1,72 @@
 #navbar {
 	width: 100%;
-	min-height: 1rem;
-	color: white;
-	fill: white;
+	min-height: 3.6rem;
+	color: $nord5;
+	fill: $nord5;
 	background-color: $nord1;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
 	align-items: center;
-	padding: 0.8rem;
-	border-bottom: 1px solid $nord4;
+	padding: 0rem 2rem;
+	border-bottom: 1px solid $nord2;
 
 	#nav-hamburger {
 		font-size: 2rem;
 		top: 0;
+		cursor: pointer;
+
+		// To Even stuff out
+		#spacer-sm {
+			height: 0.4rem;
+			width: auto;
+		}
+	}
+
+	#nav-middle {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width: 50%;
+		margin: 0;
+		height: 3.4rem;
+		padding: 0;
+
+		#nav-searchbar {
+			background-color: $nord0;
+			border: none;
+			margin: 0;
+			height: 60%;
+			width: 80%;
+			padding: 0.4rem;
+			color: $nord5;
+			font-size: 1rem;
+
+			&:focus {
+				border: 1px solid $nord8;
+				outline: none;
+			}
+		}
+
+		#nav-search-btn {
+			background-color: $nord2;
+			border: none;
+			height: 60%;
+			margin: 0;
+
+			svg {
+				padding: 0.4rem 1.5rem;
+				max-height: 100%;
+				fill: $nord4;
+				transition: fill 100ms ease;
+				cursor: pointer;
+
+				&:hover {
+					fill: $nord8;
+				}
+			}
+		}
 	}
 
 	#nav-upload {
