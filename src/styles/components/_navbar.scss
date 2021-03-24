@@ -11,15 +11,40 @@
 	padding: 0rem 2rem;
 	border-bottom: 1px solid $nord2;
 
-	#nav-hamburger {
-		font-size: 2rem;
-		top: 0;
-		cursor: pointer;
+	#nav-left {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 
-		// To Even stuff out
-		#spacer-sm {
-			height: 0.4rem;
-			width: auto;
+		#nav-hamburger {
+			font-size: 2rem;
+			top: 0;
+			cursor: pointer;
+
+			// To Even stuff out
+			#spacer-sm {
+				height: 0.4rem;
+				width: auto;
+			}
+		}
+
+		#nav-youtube-logo {
+			margin-left: 1.5rem;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+
+			svg {
+				fill: $nord8;
+			}
+
+			span {
+				font-weight: 600;
+				margin-left: 4px;
+			}
 		}
 	}
 
@@ -40,8 +65,9 @@
 			height: 60%;
 			width: 80%;
 			padding: 0.4rem;
-			color: $nord5;
+			color: $nord4;
 			font-size: 1rem;
+			font-weight: 500;
 
 			&:focus {
 				border: 1px solid $nord8;
@@ -59,8 +85,26 @@
 				padding: 0.4rem 1.5rem;
 				max-height: 100%;
 				fill: $nord4;
-				transition: fill 100ms ease;
+				opacity: 70%;
+				transition: all 50ms ease;
 				cursor: pointer;
+
+				&:hover {
+					opacity: 100%;
+					fill: $nord8;
+				}
+			}
+		}
+
+		#nav-microphone {
+			width: 25px;
+			height: 25px;
+			cursor: pointer;
+			margin-left: 1rem;
+
+			svg {
+				fill: $nord4;
+				transition: fill 50ms ease;
 
 				&:hover {
 					fill: $nord8;
@@ -69,8 +113,57 @@
 		}
 	}
 
-	#nav-upload {
-		width: 25px;
-		height: 100%;
+	#nav-right {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+
+		#nav-upload {
+			width: 25px;
+			height: 25px;
+			cursor: pointer;
+			fill: $nord4;
+			transition: fill 50ms ease;
+			margin-right: 1.5rem;
+
+			&:hover {
+				fill: $nord8;
+			}
+		}
+
+		#nav-waffle {
+			width: 25px;
+			height: 25px;
+			cursor: pointer;
+			fill: $nord4;
+			transition: fill 50ms ease;
+			margin-right: 1.5rem;
+
+			&:hover {
+				fill: $nord8;
+			}
+		}
+
+		#nav-bell {
+			width: 25px;
+			height: 25px;
+			cursor: pointer;
+			fill: $nord4;
+			transition: fill 50ms ease;
+			margin-right: 1.5rem;
+
+			&:hover {
+				fill: $nord8;
+			}
+		}
+
+		#pfp {
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+			background-color: $nord4;
+			border-radius: 100%;
+		}
 	}
 }
