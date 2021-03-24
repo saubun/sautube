@@ -1,0 +1,49 @@
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 3.5rem;
+	height: 100%;
+	background-color: $nord1;
+	color: $nord5;
+	border-right: 1px solid $nord3;
+	width: 17%;
+
+	&-nav {
+		display: flex;
+		flex-direction: column;
+
+		*:not(.fake-hr) {
+			margin: 0.8rem 1rem;
+		}
+
+		*:not(.fake-hr):not(.subscriptions-title) {
+			font-weight: 600;
+		}
+
+		* {
+			font-size: 0.9rem;
+		}
+
+		.fake-hr {
+			margin: 0;
+			width: 100%;
+			height: 1px;
+			background-color: $nord3;
+			margin: 0.5rem 0;
+		}
+
+		a {
+			color: $nord4;
+			text-decoration: none;
+
+			&:first-child {
+				margin-top: 1.6rem;
+			}
+		}
+
+		.subscriptions-title {
+			margin-left: 2rem;
+		}
+	}
+}
