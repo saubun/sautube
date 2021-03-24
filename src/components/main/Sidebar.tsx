@@ -31,6 +31,41 @@ export default function Navbar() {
 				</a>
 				<div className="fake-hr" />
 				<h4 className="subscriptions-title">SUBSCRIPTIONS</h4>
+				<div className="nav-channels">
+					<a href="/" className="channel1">
+						<div id="pfp"></div>
+						<span>channel</span>
+					</a>
+					<a href="/" className="channel2">
+						<div id="pfp"></div>
+						<span>channel</span>
+					</a>
+					<a href="/" className="channel3">
+						<div id="pfp"></div>
+						<span>channel</span>
+					</a>
+					<a href="/" className="channel4">
+						<div id="pfp"></div>
+						<span>channel</span>
+					</a>
+					<a href="/" className="channel5">
+						<div id="pfp"></div>
+						<span>channel</span>
+					</a>
+					<a href="/" className="channel6">
+						<div id="pfp"></div>
+						<span>channel</span>
+					</a>
+					<a href="/" className="channel7">
+						<div id="pfp"></div>
+						<span>channel</span>
+					</a>
+					<a href="/" className="channel8">
+						<span>Show 46 More</span>
+					</a>
+				</div>
+				<div className="fake-hr" />
+				<h4 className="nav-more-from-youtube">MORE FROM YOUTUBE</h4>
 			</nav>
 		</div>
 	);
